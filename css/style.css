@@ -1,0 +1,147 @@
+:root{
+      --color1: #05b1b1;
+      --color2: #52339a;
+}
+header, footer, section{
+      padding: 100px 0;
+}
+header{
+      padding: 150px 0;
+}
+
+header,footer{
+      background: url(../img/pattern.png), rgb(5,177,177);
+      background: url(../img/pattern.png), linear-gradient(90deg, rgba(5,177,177,1) 0%, rgba(82,51,154,1) 100%);
+      background-size: contain;
+}
+
+
+.itd_play{
+      background-color: var(--color1);
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin: 30px auto;
+      transition: all 0.5s ease;
+}
+
+.itd_play:hover{
+      background-color: var(--color2);
+}
+
+.itd_triangle{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12px 0 12px 20px;
+      border-color: transparent transparent transparent var(--bs-white);
+      margin-left: 5px;
+}
+
+.btn-itd{
+      display: block;
+      max-width: 200px;
+      margin: 0 auto;
+      padding: 8px 30px;
+      color: var(--bs-white);
+      background-color: var(--color2);
+}
+
+.btn-itd:hover{
+      color: var(--bs-white);
+      background-color: var(--color1);      
+}
+
+.color1{
+      color: var(--color1);
+}
+.color2{
+      color: var(--color2);
+}
+.bg1{
+      background-color: var(--color1);
+}
+.bg2{
+      background-color: var(--color2);
+}
+
+.about, .shedule{
+      background-color: #eee;
+}
+
+.about i{
+      font-size: 25px;
+      color: var(--color2);
+}
+
+.itd_circle{
+      margin: 0 auto 15px;
+      width: 70px;
+      height: 70px;
+      border: 3px solid var(--color2);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center; /* этот и следующий метод располагают элемент по центру*/
+      align-items: center;
+}
+
+.line{
+      width: 100px;
+      height: 3px;
+      background-color: var(--color1);
+      margin: 15px auto 25px;
+}
+
+.forwhom h5{
+      padding: 50px;
+      margin-bottom: 25px;
+      border: 3px solid var(--color1);
+}
+.rowbag{
+      margin: 0px;
+}
+
+/*Гармошки*/
+
+.accordion-button:not(.collapsed){
+      color: rgb(255, 255, 255);
+      background: var(--color2);
+}
+
+.accordion-button:not(.collapsed):after{
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.process h5{
+      padding: 10px;
+      border: 3px solid var(--color2);
+}
+
+.phone-image img{
+      max-width: 35%;
+      max-height: 35%;
+
+}
+
+.btn-soc {
+      border: 2px solid var(--bs-white);
+      margin: 0 2px 0 2px;
+}
+
+.icon{
+      color:rgb(255, 255, 255)
+}
+
+.btn-soc:hover{
+      background-color: rgb(78, 78, 78);
+      transition: all 0.3s ease;
+}
+
+.buttons{
+      display: flex;
+      justify-content: center;
+}
